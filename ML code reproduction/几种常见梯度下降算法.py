@@ -47,7 +47,7 @@ def sigmoid(x):
 def J(theta,X,Y,lamda=0):#lambda是正则化因子
 	m,n=X.shape
 	#先计算模型输出y_,即根据hθ(x)=θ0*x0+θ1*x1+.....+计算
-	#np.dot()是点乘
+	#这里是矩阵乘法
 	y_=np.dot(X,theta)
 	#在通过激活函数给出最终判决概率
 	h=sigmoid(y_)
